@@ -139,17 +139,29 @@ header .title:hover {
     }
     
 }  */
-@media (max-width:600px) {
+@media (max-width: 600px) {
+
+    body {
+        overflow-y: auto; /* allow scroll ONLY on mobile */
+    }
+
     .pads-container {
         grid-template-columns: repeat(2, 1fr);
         padding: 2rem;
-        gap: 1rem;
-        width: 100%;
+        gap: 1.5rem;
+
         justify-items: center;
+        align-items: center;
     }
+
     .pads-container .pad {
-        height: 10rem;
         width: 100%;
+        max-width: 13rem;
+        height: 11rem;
         margin: 0;
+    }
+
+    .pads-container .pad .sound {
+        font-size: 2rem;
     }
 }
