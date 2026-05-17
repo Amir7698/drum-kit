@@ -155,5 +155,7 @@ header .title:hover {
     }
     .pads-container .pad {
         height: 10rem;
+        width: 100%;  /* ← add this */
+        margin: 0;    /* ← add this */
     }
 }
