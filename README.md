@@ -23,4 +23,4 @@ A cyberpunk-themed interactive drum machine built with HTML, CSS, and JavaScript
 
 ## Live Demo
 
-[Link here]
+[🥁 Play it here](https://amir7698.github.io/drum-kit/)
