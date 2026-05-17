@@ -19,9 +19,10 @@ html {
 
 body {
     min-height: 100vh;
-    font-family: "Orbitron", sans-serif;
+    font-family: "Orbitron",    sans-serif;
     background: var(--bg);
     overflow: hidden;
+    /* overflow-x: hidden; */
 
 
 }
@@ -33,21 +34,21 @@ header .title {
     padding: 2rem;
     font-weight: 900;
     text-align: center;
-    text-shadow:         0 0 7px #fff,
+    text-shadow: 0 0 5px #ffffffa5;
  
     transition: 0.6s ease;  /* ← move here */
 }
 
 header .title:hover {
     transform: scale(1.05);
-    color: 00f3ff;
+    color: #04a5ae;
     text-shadow: 
-        0 0 7px #fff,
-        0 0 10px #fff,
-        0 0 21px #fff,
-        0 0 42px #ff00ff,
-        0 0 82px #ff00ff,
-        0 0 92px #ff00ff;
+        0 0 1px #fff,
+        0 0 2px #fff,
+        0 0 2px #fff,
+        0 0 4px #017076,
+        0 0 8px #007bff,
+        0 0 9px #0f65de;
     cursor: pointer;
 }
 
@@ -56,6 +57,7 @@ header .title:hover {
     grid-template-columns: auto auto auto;
     padding: 5rem;
     justify-content: center;
+    
     
 }
 
@@ -70,6 +72,8 @@ header .title:hover {
     align-items: center;
     justify-content: center;
     cursor: pointer;
+    transition: .5s;
+        /* transition: all 1s; */
 }
 
 
@@ -96,4 +100,57 @@ header .title:hover {
     transform: scale(1.03);
     box-shadow: 0 0 0.5rem var(--neon-blue),
                 0 0 1rem #008087;
+}
+
+
+.pad-active {
+    background-color: #00f3ff22;
+    box-shadow: 0 0 1rem var(--neon-blue),
+                0 0 3rem #008087;
+    transform: scale(0.97);
+}
+
+.pad-click .sound {
+    color: var(--neon-blue);
+}
+/* 
+@media (max-width:600px) {
+    html {
+        font-size: 55%;
+
+    }
+    body {
+        overflow-x: hidden;
+    }
+    .pads-container {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 1.5rem;
+        gap: 1rem;
+    }
+
+    .pads-container .pad {
+        width: 12rem;
+        height: 12rem;
+        margin: 1rem;
+    }
+
+    .pads-container .pad .sound {
+        font-size: 1.8rem;
+    }
+    
+}  */
+
+@media (max-width:600px) {
+    html { font-size: 55%; }
+    body { overflow-x: hidden; }
+    .pads-container {
+        grid-template-columns: 1fr;
+        padding: 2rem;
+        gap: 1rem;
+        max-width: 30rem;
+        margin: 0 auto;
+    }
+    .pads-container .pad {
+        height: 10rem;
+    }
 }
