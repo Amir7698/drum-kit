@@ -139,23 +139,17 @@ header .title:hover {
     }
     
 }  */
-
 @media (max-width:600px) {
-    html { font-size: 55%; }
-    body { overflow: auto;
-         overflow-x: hidden; }
     .pads-container {
         grid-template-columns: repeat(2, 1fr);
         padding: 2rem;
         gap: 1rem;
-        /* max-width: 30rem; */
         width: 100%;
-
-        /* margin: 0 auto; */
+        justify-items: center;
     }
     .pads-container .pad {
         height: 10rem;
-        width: 100%;  /* ← add this */
-        margin: 0;    /* ← add this */
+        width: 100%;
+        margin: 0;
     }
 }
