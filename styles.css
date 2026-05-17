@@ -142,13 +142,16 @@ header .title:hover {
 
 @media (max-width:600px) {
     html { font-size: 55%; }
-    body { overflow-x: hidden; }
+    body { overflow: auto;
+         overflow-x: hidden; }
     .pads-container {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2, 1fr);
         padding: 2rem;
         gap: 1rem;
-        max-width: 30rem;
-        margin: 0 auto;
+        /* max-width: 30rem; */
+        width: 100%;
+
+        /* margin: 0 auto; */
     }
     .pads-container .pad {
         height: 10rem;
